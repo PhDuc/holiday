@@ -1,0 +1,7 @@
+markdown: rdiscount
+pygments: true
+permalink: /:title
+gems: [jekyll-haml]
+sass:
+  style: compressed
+  sass_dir: _sass
