@@ -1,26 +1,33 @@
 source 'https://rubygems.org'
+ruby "2.1.5"
+gem 'rails', '~> 4.1.8'                      # Core rails gem
 
-gem 'rails', '3.2.19'
+gem "awesome_print"                          # Pretty print result
+gem 'autoprefixer-rails'                     # Auto add browser vendor prefixes
+gem 'bootstrap-sass'                         # Bootstrap sass port to rails
+gem 'coffee-rails', '~> 4.1.0'               # Coffeescript
+gem "haml"                                   # Better HTML
+gem "mysql2"                                 # Database (sql)
+gem 'pg'                                     # Database (postgresql)
+gem 'jquery-rails'                           # JQuery with rails
+gem 'sass-rails', '~> 4.0.4'                 # CSS extension
+gem 'uglifier', '>= 1.0.3'                   # JavaScript interpreter
+gem "i18n-js", ">= 3.0.0.rc8"                # Javascript internationalization
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
-
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
+group :test, :development, :qa do
+  gem "pry-byebug"                           # Binding pry debugger
+  gem "pry-rails"                            # Binding pry debugger
+  gem "pry-remote"                           # Remote pry debugger
+  gem "rspec-rails", ">= 3.1.0"              # Test rspec
+  gem 'guard', '>= 2.2.2', require: false    # Guard
+  gem 'guard-livereload',  require: false    # Guard + livereload
+  gem 'rack-livereload'                      # Guard + livereload
+  gem 'rb-fsevent',        require: false    # Guard + livereload
+  #gem 'guard-coffeescript'                  # Guard + Coffeescript. Not working for some reason
 end
 
-gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
