@@ -6,7 +6,7 @@ default: &default
 
 development: &development
   <<: *default
-  database: holiday_development
+  database: remindme_development
   username: vagrant
   password:
   host: localhost
@@ -16,14 +16,14 @@ development: &development
 # Do not set this db to the same as development or production.
 test: &test
   <<: *default
-  database: holiday_test
+  database: remindme_test
   username: vagrant
   password: # password is in the local file
   host: localhost
 
 production: &production
   <<: *default
-  database: holiday_production
+  database: remindme_production
   username: vagrant
   password: # password is in the local file
   host: localhost

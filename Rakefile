@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Holiday::Application.load_tasks
+Remindme::Application.load_tasks
