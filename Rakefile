@@ -53,10 +53,10 @@ desc 'Parse sass files'
 task :sass do
   require 'sass'
 
-  css = File.open('css/_sass/main.sass', 'r') { |f| Sass::Engine.new(f.read).render }
+  css = File.open('css/main.sass', 'r') { |f| Sass::Engine.new(f.read).render }
   File.open('css/main.css', 'w') { |f| f.write css }
 
-  puts 'Parsed main.sass'
+  puts 'Parsed main.scss'
 end
 
 desc 'Build all haml and sass files for deployment'

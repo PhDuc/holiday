@@ -131,3 +131,4 @@ DEPENDENCIES
   github-pages
   haml
   jekyll-haml
+  sass
