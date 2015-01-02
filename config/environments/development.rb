@@ -35,6 +35,15 @@ Remindme::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
+  # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
+  config.assets.precompile += %w( search.js application.js)
+
   # Loading the associated records of the objects returned by Model.find using as few queries as possible
   config.eager_load = false
+
+  #in production, set to false to let Nginx or Apache handle instead
+  config.serve_static_assets = true
+
+  # Automatically inject JavaScript needed for LiveReload
+  config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
 end

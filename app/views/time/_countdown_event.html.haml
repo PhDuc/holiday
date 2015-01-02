@@ -1,0 +1,21 @@
+.row
+  .countdown-days
+    .countdown-number
+      = '%2s' % (0..50).to_a.sample
+    .countdown-var Days
+  .countdown-hours
+    .countdown-number
+      = '%2s' % (0..23).to_a.sample
+    .countdown-var Hours
+  .countdown-minutes
+    .countdown-number
+      = '%2s' % (0..59).to_a.sample
+    .countdown-var Minutes
+  .countdown-seconds
+    .countdown-number.active-number
+      = '%2s' % (0..59).to_a.sample
+    .countdown-var Seconds
+.countdown-text
+  till
+  .countdown-name
+    = holiday_name

@@ -1,0 +1,17 @@
+- content_for :custom_styles do
+  = stylesheet_link_tag 'time/countdown'
+
+.header
+  %h1 Countdown
+  %h4 Remind you holidays or important dates
+
+#add-more{style: 'margin-left: 40px; margin-bottom: 20px;'}
+  .icon-social.addthis
+
+
+
+#countdown-list
+  - @events.each do |e|
+    .coundownt-event.col-lg-4
+      = render partial: 'time/countdown_event'
+

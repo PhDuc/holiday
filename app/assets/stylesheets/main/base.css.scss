@@ -1,0 +1,95 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 60px; /* bottom = footer height */
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+  color: #c94d00;
+}
+
+.centralize {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 70%;
+}
+
+.left  { float: left;  }
+.right { float: right; }
+
+.header {
+  @extend .centralize;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#header {
+  background-color: #1E1E1E;
+  font-size: 14px;
+  position:relative;
+  width: 100%;
+}
+
+.header-wrapper {
+  color: #bfbfbf;
+  font-size: 14px;
+  height: 25px;
+  vertical-align: middle;
+  margin-top: 5px;
+
+  .form-group {
+    display: inline-block;
+    margin: 3px 10px 5px 5px;
+    #login-email, #login-password {
+      display: inline-block;
+      margin-right: 15px;
+      label {
+        font-weight: 300;
+        font-style: italic;
+      }
+      input {
+        margin-left: 5px;
+        font-weight: 200;
+        color: black;
+        background-color: #fcfae0 ;
+      }
+    }
+  }
+}
+
+#footer {
+  background-color: #1E1E1E;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+}
+
+.footer-wrapper {
+  color: #bfbfbf;
+  margin: 10px 0px 10px 0;
+
+  a { color: #afcecc; }
+
+  .separator {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 12px;
+    margin-left: 10px;
+  }
+}
+
+.clear-button {
+  display: inline-block;
+  cursor: pointer;
+  color: #bfbfbf;
+  &:hover { color: white; }
+}

@@ -1,0 +1,55 @@
+#countdown-list {
+  min-width: 358px;
+  display: block;
+  text-align: center;
+  margin-bottom: 100px;
+
+  .col-lg-4 {
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    display: inline-block;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .countdown-days, .countdown-hours, .countdown-minutes, .countdown-seconds {
+      display: inline-block;
+      text-align: center;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .countdown-var {
+      font-family: 'Share', cursive;
+      font-size: 20px;
+      color: #2f3287;
+    }
+
+    .countdown-number {
+      font-size: 20px;
+      color: red;
+    }
+
+    .active-number {
+      color: blue;
+    }
+  }
+
+  .countdown-text{
+    font-size: 18px;
+    color: #606060;
+
+    .countdown-name {
+      font-weight: 500;
+      font-size: 20px;
+      display: inline-block;
+      text-decoration: underline;
+      font-style: italic;
+    }
+  }
+
+}

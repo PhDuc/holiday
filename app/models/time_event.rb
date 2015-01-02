@@ -1,0 +1,2 @@
+class TimeEvent < Event
+end

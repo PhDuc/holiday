@@ -1,0 +1,15 @@
+#header
+  .container
+    = render partial: 'shared/header'
+.content-wrapper
+  .container
+    = yield
+
+  = javascript_include_tag "application"
+  = javascript_include_tag "main/base"
+
+  = yield :custom_js
+  = yield :custom_styles
+#footer
+  .container
+    = render partial: 'shared/footer'
